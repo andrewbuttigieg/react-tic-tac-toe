@@ -18,25 +18,25 @@ function Square(props) {
           />
         );
       }
+
+      createTable = () => {
+        let table = []
+        let numberOfColumns = 3
+        let numberOfRows = 3
+        for (let i = 0; i < numberOfRows; i++) {
+          let row = []
+          for (let j = (i * numberOfColumns); j < (i * numberOfColumns) + numberOfColumns; j++) {
+            row.push(this.renderSquare(j))
+          }
+          table.push(<div className="board-row">{row}</div>)
+        }
+        return table
+      }
     
       render() {
         return (
-          <div>
-            <div className="board-row">
-              {this.renderSquare(0)}
-              {this.renderSquare(1)}
-              {this.renderSquare(2)}
-            </div>
-            <div className="board-row">
-              {this.renderSquare(3)}
-              {this.renderSquare(4)}
-              {this.renderSquare(5)}
-            </div>
-            <div className="board-row">
-              {this.renderSquare(6)}
-              {this.renderSquare(7)}
-              {this.renderSquare(8)}
-            </div>
+          <div>  
+              {this.createTable()}
           </div>
         );
       }
