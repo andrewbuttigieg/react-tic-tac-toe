@@ -15,7 +15,7 @@ on:
 
 env:
   # TODO: Change variable to your image's name.
-  IMAGE_NAME: andrewbuttigieg/react-tic-tac-toe
+  IMAGE_NAME: react-tic-tac-toe
 
 jobs:
 
