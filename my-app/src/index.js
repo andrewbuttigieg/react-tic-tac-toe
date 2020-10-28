@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import Game from './Game';
-import Shoppinglist from './Shoppinglist'
+//import Shoppinglist from './Shoppinglist'
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(<App />, document.getElementById('root'));
